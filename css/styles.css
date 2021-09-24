@@ -19,49 +19,45 @@ body {
 }
 
 .puzzle-container > div {
+    background-image: url('../img/flower.png');
+    background-repeat: no-repeat;
     cursor: pointer;
 }
 
 .square-1 {
-    background: url('../img/flower.png') no-repeat;
+    background-position: left top;
 }
 
 .square-2 {
-    background: url('../img/flower.png') no-repeat;
     background-position: center top;
 }
 
 .square-3 {
-    background: url('../img/flower.png') no-repeat;
     background-position: right top;
 }
 
 .square-4 {
-    background: url('../img/flower.png') no-repeat;
     background-position: left center;
 }
 
 .square-5 {
-    background: url('../img/flower.png') no-repeat;
     background-position: center;
 }
 
 .square-6 {
-    background: url('../img/flower.png') no-repeat;
     background-position: right center;
 }
 
 .square-7 {
-    background: url('../img/flower.png') no-repeat;
     background-position: left bottom;
 }
 
 .square-8 {
-    background: url('../img/flower.png') no-repeat;
     background-position: center bottom;
 }
 
 div.square-9 {
+    background: white;
     cursor: default;
 }
 
