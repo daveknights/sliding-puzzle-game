@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+}
+
+body {
+    background: #aaa;
+}
+
+.puzzle-container {
+    background: white;
+    border: solid 1px white;
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 300px;
+    margin: 20px auto 0;
+    width: 300px;
+}
+
+.puzzle-container > div {
+    cursor: pointer;
+}
+
+.square-1 {
+    background: url('../img/flower.png') no-repeat;
+}
+
+.square-2 {
+    background: url('../img/flower.png') no-repeat;
+    background-position: center top;
+}
+
+.square-3 {
+    background: url('../img/flower.png') no-repeat;
+    background-position: right top;
+}
+
+.square-4 {
+    background: url('../img/flower.png') no-repeat;
+    background-position: left center;
+}
+
+.square-5 {
+    background: url('../img/flower.png') no-repeat;
+    background-position: center;
+}
+
+.square-6 {
+    background: url('../img/flower.png') no-repeat;
+    background-position: right center;
+}
+
+.square-7 {
+    background: url('../img/flower.png') no-repeat;
+    background-position: left bottom;
+}
+
+.square-8 {
+    background: url('../img/flower.png') no-repeat;
+    background-position: center bottom;
+}
+
+button {
+    background: #862975;
+    border: solid 2px black;
+    border-radius: 4px;
+    box-shadow: 0 0 5px #333;
+    color: #ddcafa;
+    cursor: pointer;
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    height: 40px;
+    letter-spacing: 1px;
+    margin: 10px auto;
+    width: 200px;
+    moz-osx-font-smoothing: grayscale;
+    -webkit-appearance: none;
+    -webkit-font-smoothing: antialiased;
+}
+
+button:hover {
+    background: #d7c1f0;
+    color: #4a1144;
+}
+
+@media(min-width: 375px) {
+    .puzzle-container {
+        height: 360px;
+        width: 360px;
+    }
+}
+
+@media (max-width: 374px) {
+    .puzzle-container > div {
+        background-size: 300%;
+    }
+}
